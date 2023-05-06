@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:id="@+id/profil_resmi_Gonderi_ogesi"
+                android:layout_margin="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"/>
+            
+            <TextView
+                android:text="Kullanici Adi"
+                android:textSize="16sp"
+                android:id="@+id/txt_kullaniciadi_gonderi_ogesi"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/design_default_color_primary" />
+
+
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/gonder_resmi_gonderi_ogesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mezunlogo"/>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            
+            <ImageView
+                android:id="@+id/begeni_gonderi_ogesi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_begeni"/>
+
+            <ImageButton
+                android:id="@+id/silme_dugmesi_gonderi_ogesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_menu_delete"
+                android:background="@android:color/transparent" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_begeniler_gonderi_ogesi"
+            android:text="beğeniler"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_gonderen_gonderi_ogesi"
+            android:text="gönderen"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_gonderihakkinda_gonderi_ogesi"
+            android:text="gönderi hakkında"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        
+    </LinearLayout>
+    
+    
+</RelativeLayout>

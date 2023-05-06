@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+
+    tools:context="com.nuddein.mezunuygulamasi.KaydolActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/mezunlogo"
+        android:scaleType="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/edit_KullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı Adı"
+        android:background="@drawable/edittext_arkaplan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_Isim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adınız"
+        android:background="@drawable/edittext_arkaplan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_GirisYili"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giriş Yılınız"
+        android:layout_marginTop="15dp"
+        android:inputType="number"
+        android:digits="0123456789"/>
+    <EditText
+        android:id="@+id/edit_MezunYili"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:hint="Mezun Yılınız"
+        android:inputType="number"
+        android:digits="0123456789"/>
+
+
+
+
+    <EditText
+        android:id="@+id/edit_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mailiniz"
+        android:background="@drawable/edittext_arkaplan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"/>
+
+
+    <EditText
+        android:id="@+id/edit_Sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifreniz"
+        android:background="@drawable/edittext_arkaplan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/btn_Kaydol_activity"
+        android:layout_width="match_parent"
+        android:text="kayıt ol"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_girisSayfasi_git"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zaten bir hesabınız var mı?       Giriş yapın"
+        android:layout_marginTop="15dp"
+
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+
+    tools:context="com.nuddein.mezunuygulamasi.GirisActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/mezunlogo"
+        android:scaleType="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+
+
+
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/edit_Email_giris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mailiniz"
+        android:background="@drawable/edittext_arkaplan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"/>
+
+
+    <EditText
+        android:id="@+id/edit_Sifre_giris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifreniz"
+        android:background="@drawable/edittext_arkaplan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/btn_Giris_activity"
+        android:layout_width="match_parent"
+        android:text="Giriş yap"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_kayitSayfasi_git"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesabınız yok mu?        Kayıt olun"
+        android:layout_marginTop="15dp"
+
+        />
+
+
+
+</LinearLayout>

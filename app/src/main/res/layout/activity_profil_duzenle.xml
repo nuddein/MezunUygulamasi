@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilDuzenleActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_profilDuzenleActivity"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_profilDuzenleActivity"
+            android:background="?android:attr/windowBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/change_password_button"
+                    android:layout_marginRight="70dp"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="230dp"
+                    android:text="Şifre Değiştir" />
+
+
+                <ImageView
+                    android:id="@+id/kapat_resmi_profilDuzenleActivity"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_kapat"
+                    android:layout_alignParentStart="true"/>
+
+
+                <TextView
+                    android:text="Profil Düzenle"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@+id/kapat_resmi_profilDuzenleActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:id="@+id/txt_kaydet_profilDuzenleActivity"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+
+                    android:text="kaydet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:onClick="selectImage"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_profil" />
+
+
+        <TextView
+            android:id="@+id/txt_degistir"
+            android:layout_marginTop="5dp"
+            android:text="Fotoğrafı Değiştir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_text_Ad_profilDuzenleActivity"
+            android:layout_marginTop="20dp"
+            android:hint="Adınız.."
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <EditText
+            android:id="@+id/edit_text_KullaniciAdi_profilDuzenleActivity"
+            android:layout_marginTop="20dp"
+            android:hint="Kullanıcı Adınız.."
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <EditText
+            android:id="@+id/edit_text_Biyografi_profilDuzenleActivity"
+            android:layout_marginTop="20dp"
+            android:hint="Bio.."
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <EditText
+            android:id="@+id/edit_text_girisYili_profilDuzenleActivity"
+            android:layout_marginTop="5dp"
+            android:hint=" Giriş yılı.."
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+
+        <EditText
+            android:id="@+id/edit_text_mezunYili_profilDuzenleActivity"
+            android:layout_marginTop="5dp"
+            android:hint=" Mezun yılı.."
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <EditText
+            android:id="@+id/edit_text_mailAdresi_profilDuzenleActivity"
+            android:hint="mailiniz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/edit_text_telNo_profilDuzenleActivity"
+            android:hint="telefon numaranız"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_ishBilgisi_profilCercevesi"
+                android:text="İş Bilgisi"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_ulke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ülke" />
+
+            <EditText
+                android:id="@+id/edit_sehir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şehir" />
+
+            <EditText
+                android:id="@+id/edit_sirket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Şirket" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_lisans_profilDuzenleActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lisans" />
+
+            <CheckBox
+                android:id="@+id/checkbox_yuksek_lisans_profilDuzenleActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="20dp"
+                android:text="Yüksek Lisans" />
+
+            <CheckBox
+                android:id="@+id/checkbox_doktora_profilDuzenleActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Doktora" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

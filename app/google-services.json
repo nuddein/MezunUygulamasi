@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1053418998597",
+    "project_id": "mezunuygulamasi",
+    "storage_bucket": "mezunuygulamasi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053418998597:android:c4ca65ac76381dbfff4c2c",
+        "android_client_info": {
+          "package_name": "com.nuddein.mezunuygulamasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053418998597-sviuokr8r3ouj290b2junm2tabf6fqf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE6PEhEr1xkzKah5Tma3TS4zY9QPhYbW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053418998597-sviuokr8r3ouj290b2junm2tabf6fqf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

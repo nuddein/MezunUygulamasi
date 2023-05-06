@@ -1,0 +1,95 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cerceve.BildirimFragment">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_BildirimFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+
+        <EditText
+            android:id="@+id/duyuruTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duyuru Başlığı"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/duyuruContentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duyuru İçeriği"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/duyuruGonderen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gönderen: KullanıcıAdı"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/duyuruEkleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duyuru Ekle" />
+        <Button
+            android:id="@+id/duyuruDeadlineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline Seç" />
+
+        <TextView
+            android:id="@+id/duyuruDeadlineTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline: Henüz Belirlenmedi" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/mezunlogo"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/duyuruRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_BildirimFragment">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
